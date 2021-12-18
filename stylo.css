@@ -151,10 +151,10 @@
   }
 
 
-  @media (min-width: 400px) {  
+  @media (min-width: 468px) {  
     body {
       background-image: url("super1.jpg") ;
-      background-position: center center;
+      background-position: absolute;
       background-attachment: fixed;
       background-size: cover;
       font-family:'Acme', sans-serif;
