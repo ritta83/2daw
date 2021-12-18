@@ -236,7 +236,7 @@ document.getElementById("divcaja4").oncontextmenu = function() {
 
         } else {
 
-            body.style.backgroundImage = 'url(super1.jpeg)';
+            body.style.backgroundImage = 'url(super1.jpg)';
         }  
         
                    

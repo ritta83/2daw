@@ -143,28 +143,28 @@
 
   
   body {
-    background-image: url("super1.jpg") ;
+    background-image: url("../super1.jpg") ;
     background-position: center center;
     background-size: absolute;
-    font-family:sans-serif;
+    font-family:'Acme', sans-serif;
     background-repeat:no-repeat;
   }
 
 
   @media (min-width: 400px) {  
     body {
-      background-image: url("movil.jpg") ;
+      background-image: url("../movil.jpg") ;
       background-position: center center;
       background-attachment: fixed;
       background-size: cover;
-      font-family:sans-serif;
+      font-family:'Acme', sans-serif;
       background-repeat:no-repeat;
     }
   } 
 
   @media (min-width: 600px) {  
     body {
-      background-image: url("super1.jpg") ;
+      background-image: url("../super1.jpg") ;
       background-position: center center;
       background-attachment: fixed;
       background-size: cover;
@@ -217,12 +217,7 @@
   }
  
 
-#zonaboton {
-    background-color: var(--fondozonaboton);
-    width: 25%;
-    height: 10vh;
-    margin: 5vh 1vw 5vh 1vw;
-  }
+
 
 
 
