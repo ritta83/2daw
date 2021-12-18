@@ -1,0 +1,397 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  .wrapper{
+    height: 100%;
+    background-color:white;
+}
+
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #006505;
+    background-color: #82b085;
+    border-radius: 15px;
+    border: 3px double #006505;
+}
+/*HOla*/
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+.navbar-links [value ="Guardar"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #006505;
+}
+.navbar-links [value ="Cargar"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #006505;
+}
+.navbar-links [value ="Noche"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #006505;
+}
+.navbar-links [value ="Borrar Fondo"] {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #006505;
+}
+
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #006505;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(75, 175, 8);
+  opacity: 0.6;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+  .navbar-links li:hover {
+    background-color: rgb(75, 175, 8);
+    opacity: 0.6;
+  }
+}
+
+  
+  p {
+    font-size: calc(8px + 0.5vw + 0.5vh);
+  }
+  h1 {
+    font-size: calc(16px + 0.5vw + 0.5vh);
+  }
+
+  
+  body {
+    background-image: url("super2.jpeg") ;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:sans-serif;
+    background-repeat:no-repeat;
+  }
+
+
+  @media (min-width: 400px) {  
+    body {
+      background-image: url("movil.jpg") ;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family:sans-serif;
+      background-repeat:no-repeat;
+    }
+  } 
+
+  @media (min-width: 600px) {  
+    body {
+      background-image: url("super2.jpeg") ;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family:sans-serif;
+      background-repeat:no-repeat;
+    }
+  } 
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+    
+
+  #zonacajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-size: 1.25rem;
+    
+  }
+
+  /* azul    rgba(34,193,195,1)*/
+  /* morado    rgba(131,58,180,1)  */
+
+  #divcaja1, #divcaja2, #divcaja3, #divcaja4 {
+    width: 200px;
+    height: 100px;
+    background:rgba(131,58,180,1);
+    margin: 100px auto;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px double #006505;
+    color:black;
+    }
+
+  .cajaAbierta {
+    background: rgba(34,193,195,1);
+    visibility:visible;
+  }
+ 
+
+#zonaboton {
+    background-color: var(--fondozonaboton);
+    width: 25%;
+    height: 10vh;
+    margin: 5vh 1vw 5vh 1vw;
+  }
+
+  
+ /*Estilos CAJA COMANDOS*/
+  .Comando {
+    position: absolute;
+    bottom: -6.5%;
+    right: -10%;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    font-family:sans-serif;
+  }
+  label{
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .entrada_comandos [value="Caja"]{
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .botonComando [value ="Procesar Comando"] {
+     position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: .5s;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #91C63C;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    
+    
+    
+    
+  }
+
+  .botonComando [value ="Procesar Comando"]:hover {
+    
+    transition: .5s;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+ 
+  .botonComando a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: .5s;
+    transform: translateX(-4%);
+    
+    
+  }
+
+  .botonComando a:hover {
+    background: #91C63C;
+    transition: .5s;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #91C63C,
+                0 0 25px #91C63C,
+                0 0 50px #91C63C,
+                0 0 100px #91C63C;
+  }
+
+
+
+  .botonComando a  span {
+    position: absolute;
+    display: block;
+  }
+
+  
+
+  .botonComando a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #91C63C);
+    animation: btn-anim1 1s linear infinite;
+    
+  }
+
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+      
+    }
+  }
+  span{
+    padding: 1px;
+  }
+  
+  .botonComando a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #91C63C);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+
+  .botonComando a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #91C63C);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100%{
+      right: 100%;
+    }
+  }
+  
+  .botonComando a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #91C63C);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+  
+
+
+
+  
+  
