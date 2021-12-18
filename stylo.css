@@ -1,10 +1,7 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
-  .wrapper{
-    height: 100%;
-    background-color:white;
-}
+  
 
 
 .navbar {
@@ -146,40 +143,17 @@
     background-image: url("super1.jpg") ;
     background-position: center center;
     background-attachment: fixed;
-    background-size: absolute;
+    background-size: cover;
     font-family:'Acme', sans-serif;
     background-repeat:no-repeat;
   }
 
 
-  @media (min-width: 400px) {  
-    body {
-      background-image: url("movil.jpg") ;
-      background-position: center center;
-      background-attachment: fixed;
-      background-size: cover;
-      font-family:'Acme', sans-serif;
-      background-repeat:no-repeat;
-    }
-  } 
+  
 
-  @media (min-width: 600px) {  
-    body {
-      background-image: url("super1.jpg") ;
-      background-position: center center;
-      background-attachment: fixed;
-      background-size: cover;
-      font-family:'Acme', sans-serif;
-      background-repeat:no-repeat;
-    }
-  } 
+  
 
-  .menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  
     
 
   #zonacajas {
