@@ -143,7 +143,7 @@
 
   
   body {
-    background-image: url("../super1.jpg") ;
+    background-image: url("super1.jpg") ;
     background-position: center center;
     background-size: absolute;
     font-family:'Acme', sans-serif;
@@ -153,7 +153,7 @@
 
   @media (min-width: 400px) {  
     body {
-      background-image: url("../movil.jpg") ;
+      background-image: url("movil.jpg") ;
       background-position: center center;
       background-attachment: fixed;
       background-size: cover;
@@ -164,7 +164,7 @@
 
   @media (min-width: 600px) {  
     body {
-      background-image: url("../super1.jpg") ;
+      background-image: url("super1.jpg") ;
       background-position: center center;
       background-attachment: fixed;
       background-size: cover;
