@@ -93,16 +93,21 @@ function cambiarClientes(tipo_accion,numeroCaja) {
 
         // dependiendo de lo que pasemos en la variable "tipo_accion", sumará o restará:
         if (tipo_accion == "poner") {
-            total_clientes_caja = total_clientes_caja + 1;
+            if(total_clientes_caja ==4) {
+                total_clientes_caja = total_clientes_caja + 0; 
+            }else {
+                total_clientes_caja = total_clientes_caja + 1;
+            }
+
             let mensaje_caja = mensajes;
             console.log("holaaa" + mensaje_caja);
-            mensaje_caja.innerHTML = "<br>En la caja hay " + total_clientes_caja + " cliente";
+            mensaje_caja.innerHTML = "<br>Caja con " + total_clientes_caja + " cliente";
 
             
         } else if (tipo_accion == "quitar") {
             total_clientes_caja = total_clientes_caja - 1;
             let mensaje_caja = mensajes;
-            mensaje_caja.innerHTML = "<br>En la caja hay " + total_clientes_caja + " cliente";
+            mensaje_caja.innerHTML = "<br>Caja con " + total_clientes_caja + " cliente";
 
           
             
@@ -123,7 +128,7 @@ function cambiarClientes(tipo_accion,numeroCaja) {
 
         // cambiando un VALOR CSS de una etiqueta:
         if (total_clientes_caja != 0 || tipo_accion == 'poner') {
-            console.log("vamos a poner el elemento en verde!");
+            console.log("vamos a poner el elemento en morado!");
             divcaja.style.background = "rgba(34,193,195,1)";
             let mensaje_caja = mensajes;
             mensaje_caja.innerHTML = "<br>Caja abierta";
@@ -141,7 +146,7 @@ function cambiarClientes(tipo_accion,numeroCaja) {
    
 
     if (total_clientes_caja == 4) {
-        alert("La caja esta saturada.");
+        alert("La caja esta completa.");
         let fin = new Date();
         let tiempoTranscurrido = (fin-inicio)/1000; //en milisegundos
         alert('tiempo transcurrido:' + tiempoTranscurrido);
@@ -204,11 +209,11 @@ document.getElementById("divcaja4").oncontextmenu = function() {
     if(style_body.getPropertyValue("background-image") == rutaImagenFondoOriginal){
 
         let body = document.getElementById('body'); // cambiar atributos HTML / CSS
-        body.style.backgroundImage='url(noche1.jpg)';//QUITAR ESTA IMAGEN
+        body.style.backgroundImage='url(superNoche.jpg)';//QUITAR ESTA IMAGEN
         
     } else {
 
-        body.style.backgroundImage = 'url(super2.jpeg)';//imagen de fondo
+        body.style.backgroundImage = 'url(super1.jpg)';//imagen de fondo
 
     }  
 
