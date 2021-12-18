@@ -19,7 +19,7 @@
     color: #8e16a7;
     background-color: #de81f5;
     border-radius: 15px;
-    border: 3px double #030e04;
+    border: 4px double #030e04;
 }
 /*HOla*/
 .brand-title {
@@ -201,13 +201,13 @@
 
   #divcaja1, #divcaja2, #divcaja3, #divcaja4 {
     width: 200px;
-    height: 100px;
-    background:rgb(182, 111, 230);
+    height: 75px;
+    background:rgb(191, 119, 240);
     margin: 100px auto;
     vertical-align: top;
     text-align: center;
-    border-radius: 15px;
-    border: 3px double #0a070a;
+    border-radius: 30px;
+    border: 5px double #0a070a;
     color:black;
     }
 
