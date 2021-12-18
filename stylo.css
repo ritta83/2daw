@@ -151,7 +151,7 @@
   }
 
 
-  @media (min-width: 468px) {  
+  @media (min-width: 400px) {  
     body {
       background-image: url("movil.jpg") ;
       background-position: center center;
