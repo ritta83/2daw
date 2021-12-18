@@ -145,6 +145,7 @@
   body {
     background-image: url("super1.jpg") ;
     background-position: center center;
+    background-attachment: fixed;
     background-size: absolute;
     font-family:'Acme', sans-serif;
     background-repeat:no-repeat;
