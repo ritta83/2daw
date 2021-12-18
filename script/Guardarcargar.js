@@ -60,7 +60,7 @@ class Guardarcargar{
     
             if (cajasValue_json[key] <= 0) {
                 //total_clientes_caja = 0;
-                divcaja.style.background = "rgba(131,58,180,1)";
+                divcaja.style.background = "rgba(216, 7, 7,1)";
                 div_mensaje.innerHTML = "<br>Caja cerrada";
             } 
     
