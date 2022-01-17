@@ -1,9 +1,22 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
-  
-
-
+ 
+body {
+  background-image: url("super1.jpg") ;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family:'Acme', sans-serif;
+  background-repeat:no-repeat;
+}
+p {
+  font-size: calc(8px + 0.5vw + 0.5vh);
+}
+h1 {
+  font-size: calc(16px + 0.5vw + 0.5vh);
+}
+/*Barra*/
 .navbar {
     display: flex;
     position: relative;
@@ -18,7 +31,7 @@
     border-radius: 15px;
     border: 4px double #030e04;
 }
-/*Barra*/
+
 .title {
   font-size: 1.5rem;
   margin: .5rem;
@@ -129,32 +142,6 @@
     opacity: 0.6;
   }
 }
-
-  
-  p {
-    font-size: calc(8px + 0.5vw + 0.5vh);
-  }
-  h1 {
-    font-size: calc(16px + 0.5vw + 0.5vh);
-  }
-
-  
-  body {
-    background-image: url("super1.jpg") ;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family:'Acme', sans-serif;
-    background-repeat:no-repeat;
-  }
-
-
-  
-
-  
-
-  
-    
 
   #zonacajas {
     display: flex;
